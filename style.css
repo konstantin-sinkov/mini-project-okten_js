@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: azure;
+}
+
+.hidden {
+    display: none;
+}  
+
+  .usersBlock {
+    margin: 0 auto;
+    width: 1180px;
+    display: flex;
+  }
+
+  .userDiv {
+      width: 580px;
+      background-color: #cbd7d3;
+  }
+
