@@ -10,6 +10,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             userDiv.innerHTML = `<h4> #${user.id} ${user.name}</h4>`;
 
             let detailsBtn = document.createElement('button');
+            //info about current user in query params
             let userDetailsLink = `user-details.html?user=${JSON.stringify(user)}`;
 
             detailsBtn.innerHTML = `<a href='${userDetailsLink}'>DETAILS INFO</a>`;

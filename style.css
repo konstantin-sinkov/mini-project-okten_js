@@ -17,8 +17,14 @@ h2 {
 
 .hidden {
     display: none;
-}  
+}
 
+.flex {
+    display: flex;
+}
+
+
+/* users page */
   .users_block {
     margin: 0 auto;
     width: 960px;
@@ -34,9 +40,10 @@ h2 {
       text-align: center;
       margin-bottom: 25px;
       padding: 15px 0;
+      box-shadow: 0px 0px 15px rgba(210, 83, 104, 0.5);
   }
 
-.userDiv button {
+.userDiv button, .posts_btn {
     width: 90%;
     border: none;
     padding: 10px 0;
@@ -46,14 +53,81 @@ h2 {
     cursor: pointer;
 }
 
-.userDiv button:hover {
+.userDiv button:hover, .posts_btn:hover {
     background-color: #085035;
+    transition: background-color 500ms;
 }
 
 .userDiv button a {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    display: block;
+}
+/* //users page */
+
+
+/* user details info */
+
+.user_details_block {
+    margin: 0 auto;
+    width: 960px;
+    background-color: #ccfcf6;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.user_details_wrap {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.user_name_block, .user_address_block, .user_company_block {
+    background-color: #c4ffe8;
+    border-radius: 10px;
+}
+
+.user_address_block {
+    width: 55%;
+}
+
+.user_company_block {
+    width: 40%;
+}
+
+.posts_btn {
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.h5 {
+    font-size: 1.2em;
+}
+
+.user_posts_block {
+    flex-wrap: wrap;
+}
+
+.post {
+    width: 18%;
+    background-color: #89d8b7;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post button {
+    border: none;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: #0b9962;
+}
+
+.post button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     display: block;
 }
 
