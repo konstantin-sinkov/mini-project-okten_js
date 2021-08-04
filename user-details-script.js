@@ -15,8 +15,8 @@ userPostsBtn.innerText = 'posts of current user';
 userDetailsBlock.appendChild(userPostsBtn);
 
 userNameBlock.innerHTML = `
-    <h4>${user.username}</h4>
-    <h5>${user.name}</h5>
+    <h3>${user.username}</h3>
+    <h4>${user.name}</h4>
     <p>email - ${user.email}</p>
     <p>phone number - ${user.phone}</p>
     <p>user website - ${user.website}</p>
@@ -28,13 +28,13 @@ userAdressBlock.innerHTML = `
     <p>street - ${user.address.street}</p>
     <p>suite - ${user.address.suite}</p>
     <p>zipcode - ${user.address.zipcode}</p>
-    <h6>coord</h6>
+    <h5>coord</h5>
     <p>lat - ${user.address.geo.lat}</p>
     <p>lng - ${user.address.geo.lng}</p>
     `;
 
 userCompanyBlock.innerHTML = `
-    <h4>USER ADRESS</h4>
+    <h4>USER COMPANY</h4>
     <p>user company - ${user.company.catchPhrase}</p>
     <p>catch phrase - ${user.company.companyName}</p>
     <p>bs - ${user.company.bs}</p>
