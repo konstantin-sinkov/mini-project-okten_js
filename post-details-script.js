@@ -9,7 +9,7 @@ let commentsBlock = document.querySelector('.comments_block');
 postBlock.innerHTML = 
     `
     <h4>Post id - ${post.id}</h4>
-    <h4>Post title - ${post.name}</h4>
+    <h4>Post title - ${post.title}</h4>
     <p>${post.body}</p>
     `;
 
@@ -22,9 +22,10 @@ function getComments() {
                 commentDiv.classList.add('comment');
                 commentDiv.innerHTML =
                     `
-                    user email - ${comment.email}
-                    <p>${comment.body}</p>
-                    `
+                        <h5>comment id - ${comment.id}</h5>
+                        <h5>commentator - ${comment.email}
+                        <p>${comment.body}</p>
+                    `;
                 commentsBlock.appendChild(commentDiv);
             }
         })

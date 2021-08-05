@@ -15,33 +15,30 @@ userPostsBtn.innerText = 'posts of current user';
 userDetailsBlock.appendChild(userPostsBtn);
 
 userNameBlock.innerHTML = `
-    <h3>${user.username}</h3>
-    <h4>${user.name}</h4>
-    <p>email - ${user.email}</p>
-    <p>phone number - ${user.phone}</p>
-    <p>user website - ${user.website}</p>
+    <h3><b>${user.username}</b></h3>
+    <h4><b>${user.name}</b></h4>
+    <p><b>email</b> - ${user.email}</p>
+    <p><b>phone number</b> - ${user.phone}</p>
+    <p><b>user website</b> - ${user.website}</p>
     `;
 
 userAdressBlock.innerHTML = `
-    <h4>USER ADRESS</h4>
-    <p>city - ${user.address.city}</p>
-    <p>street - ${user.address.street}</p>
-    <p>suite - ${user.address.suite}</p>
-    <p>zipcode - ${user.address.zipcode}</p>
-    <h5>coord</h5>
-    <p>lat - ${user.address.geo.lat}</p>
-    <p>lng - ${user.address.geo.lng}</p>
+    <h4><u>USER ADRESS</u></h4>
+    <p><b>city</b> - ${user.address.city}</p>
+    <p><b>street</b> - ${user.address.street}</p>
+    <p><b>suite</b> - ${user.address.suite}</p>
+    <p><b>zipcode</b> - ${user.address.zipcode}</p>
+    <h5><u>coord</u></h5>
+    <p><b>lat</b> - ${user.address.geo.lat}</p>
+    <p><b>lng</b> - ${user.address.geo.lng}</p>
     `;
 
 userCompanyBlock.innerHTML = `
-    <h4>USER COMPANY</h4>
-    <p>user company - ${user.company.catchPhrase}</p>
-    <p>catch phrase - ${user.company.companyName}</p>
-    <p>bs - ${user.company.bs}</p>
+    <h4><u>USER COMPANY</u></h4>
+    <p><b>user company</b> - ${user.company.catchPhrase}</p>
+    <p><b>catch phrase</b> - ${user.company.companyName}</p>
+    <p><b>bs</b> - ${user.company.bs}</p>
     `;
-
-
-
 
 const userPostsBlock = document.querySelector('.user_posts_block');
 
